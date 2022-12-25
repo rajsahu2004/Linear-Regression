@@ -11,11 +11,11 @@ def costFunction(x, y, w, b):
     return cost
 
 
-extend = 100
+extend = 20
 bTest = np.arange(-extend, extend)
 wTest = np.arange(-extend, extend)
 costArray = np.array([])
-count = 0
+count = 1
 for btest in bTest:
     for wtest in wTest:
         cost = costFunction(x, y, wtest, btest)
