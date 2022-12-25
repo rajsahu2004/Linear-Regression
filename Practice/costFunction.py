@@ -3,16 +3,15 @@ import matplotlib.pyplot as plt
 
 x = np.arange(0, 10)
 y = 2*x+3
-w, b = 0, 0
 
 
 def costFunction(x, y, w, b):
     length = len(x)
-    cost = (1/2*length)*(sum(w*x+b-y))**2
+    cost = (1/2*length)*(np.sum(w*x+b-y))**2
     return cost
 
 
-extend = 50
+extend = 100
 bTest = np.arange(-extend, extend)
 wTest = np.arange(-extend, extend)
 costArray = np.array([])
