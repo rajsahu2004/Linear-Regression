@@ -20,7 +20,7 @@ for btest in bTest:
     for wtest in wTest:
         cost = costFunction(x, y, wtest, btest)
         costArray = np.append(costArray, cost)
-        print(count, cost)
+        print(f'{count} - {cost}')
         count = count+1
 size = len(bTest)
 costArray = np.reshape(costArray, (size, size))
